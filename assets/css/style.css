@@ -53,6 +53,7 @@ p.footer{
    height: 20%;
    font-size: 18px;
 }
+/* creating gap between images */
 .gap{
     margin: 30px;
 }
