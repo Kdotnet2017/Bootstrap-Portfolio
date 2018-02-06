@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,11 +11,14 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Contact Me - Bootstrap Portfolio</title>
 </head>
+
 <body>
     <div class="container-fluid">
         <!-- First  navigation bar -->
         <nav class="navbar  navbar-default">
-           <img class="navbar-brand" src="#" alt="Your Name" style="background:#4aaaa5;color:#fff;">
+            <a href="index.html">
+                <img class="navbar-brand" src="#" alt="Your Name" style="background:#4aaaa5;color:#fff;">
+            </a>
             <ul class="nav navbar-nav navbar-right">
                 <li class="nav-item">
                     <a href="index.html">About</a>
@@ -31,34 +35,34 @@
         <!-- using bootstrap grid to organize content section -->
         <div class="row row-content">
             <div class="col-sm-9">
-                    <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h1>Contact</h1>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h1>Contact</h1>
+                    </div>
+                    <div class="panel-body">
+                        <form class="form-group" action="index.html" method="GET">
+                            <div class="col-lg-8">
+                                <!-- col-sm-4 or 6 -->
+                                <label for="name" class="">Name</label>
+                                <input type="text" class="form-control" id="name" required="required" placeholder="John Smith">
                             </div>
-                            <div class="panel-body">
-                                <form class="form-group" action="index.html" method="GET">
-                                    <div class="col-lg-8">
-                                        <!-- col-sm-4 or 6 -->
-                                        <label for="name" class="">Name</label>
-                                        <input type="text" class="form-control" id="name" value="" placeholder="John Smith">
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <label for="email">Email</label>
-                                        <input type="text" class="form-control" id="email" placeholder="example@gmail.com">
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <label for="message">Message</label>
-                                        <textarea class="form-control" rows="7" id="message"></textarea>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <br>
-                                        <button class="btn btn-default btn-lg mybgbutton" type="submit">Submit</button>
-                                    </div>
-                                </form>
+                            <div class="col-lg-8">
+                                <label for="email">Email</label>
+                                <input type="text" class="form-control" id="email" placeholder="example@gmail.com" required="required">
                             </div>
-                        </div>
+                            <div class="col-lg-8">
+                                <label for="message">Message</label>
+                                <textarea class="form-control" rows="7" id="message"></textarea>
+                            </div>
+                            <div class="col-lg-8">
+                                <br>
+                                <button class="btn btn-default btn-lg mybgbutton" type="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
-             <!-- sidebar Connect to me logos and links -->
+            <!-- sidebar Connect to me logos and links -->
             <div class="col-sm-3">
                 <div class="panel panel-default">
                     <div class="panel-heading">
@@ -84,7 +88,8 @@
                         </div>
                     </div>
                 </div>
-            </div> <!-- end of sidebar connect to me grid -->
+            </div>
+            <!-- end of sidebar connect to me grid -->
         </div>
         <!-- end of content -->
         <!-- footer -->
@@ -93,7 +98,10 @@
             <footer>
                 <p class="text-center footer">&copy; Copyright 2018 Your Name</p>
             </footer>
-        </div>  <!-- end of footer-->
-    </div> <!-- container -->
+        </div>
+        <!-- end of footer-->
+    </div>
+    <!-- container -->
 </body>
+
 </html>
